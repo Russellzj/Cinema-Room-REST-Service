@@ -17,11 +17,13 @@ apply plugin: 'io.spring.dependency-management'
 repositories {
     mavenCentral()
 }
-
+/*
 java {
     sourceCompatibility = "17"
     targetCompatibility = "21"
 }
+
+ */
 
 sourceSets.main.resources.srcDirs = ["src/resources"]
 
@@ -38,8 +40,10 @@ dependencies {
 
 test {
     jvmArgs '--add-opens', 'java.base/java.lang=ALL-UNNAMED'
-    useJUnitPlatform()
+/*    useJUnitPlatform()
     testLogging {
         events "passed", "skipped", "failed"
     }
+
+ */
 }
