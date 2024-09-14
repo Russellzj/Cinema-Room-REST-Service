@@ -15,8 +15,11 @@ public class Theatre {
             }
         }
     }
-
     public Seat[] getSeats() {
         return seats;
     }
+
+    public int getCOLUMNS() { return COLUMNS; }
+
+    public int getROWS() { return ROWS; }
 }
