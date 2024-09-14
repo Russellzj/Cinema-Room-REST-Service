@@ -9,11 +9,11 @@ public class Seat {
         this.column = column;
     }
 
-    int getRow() {
+    public int getRow() {
         return row;
     }
 
-    int getColumn() {
+    public int getColumn() {
         return column;
     }
 }
