@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class TaskController {
 
     @GetMapping(path = "/seats", produces = "application/json")
-    public cinema.room.Seat[] getSeats() {
+    public Theatre getSeats() {
         Theatre myTheatre = new Theatre();
-        return myTheatre.getSeats();
+        return myTheatre;
     }
 
 
